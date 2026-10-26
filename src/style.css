@@ -1,0 +1,159 @@
+:root {
+  --bg-color: #f6f6f6;
+  --card-bg: #fff;
+  --border-color: #eaeaea;
+  --text-main: #333;
+  --text-muted: #b3b3b3;
+  --font-stack: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a1e33;
+  font-family: var(--font-stack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--text-main);
+}
+
+.app-wrapper {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  background-color: #112942;
+}
+
+.todo-card {
+  background-color: #1a3654;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-header h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.refresh-btn,
+.options-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: #fafafa;
+}
+
+.input-container input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 2rem;
+  font-style: italic;
+  outline: none;
+}
+
+.enter-icon {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 18px 25px;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.todo-item:hover {
+  background-color: #fcfcfc;
+}
+
+.todo-checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  margin-right: 15px;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  transition: all 0.2s ease;
+}
+
+.todo-checkbox:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.todo-checkbox:checked::before {
+  content: "✓";
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.todo-text {
+  font-style: oblique;
+  font-weight: bold;
+  color: white;
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.card-footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  text-decoration: underline;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.clear-btn:hover {
+  color: #ff5252;
+}
