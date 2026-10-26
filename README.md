@@ -64,7 +64,8 @@ Clone this repository to your target workspace directory: 
 
 sh
 
-git clone git@github.com:your-username/todo-list-project.git
+git clone (https://github.com/Abdulsadiqsamadani/TODO-LIST.git)
+
 cd todo-list-project
 
 Use code with caution.
@@ -115,15 +116,17 @@ This project can be compiled down to raw deployment packages inside the /dist la
 
 👤 **Author** 
 
-* GitHub: [@your-username](https://github.com/your-username)
-* Twitter: [@your-twitter](https://twitter.com/your-twitter)
-* LinkedIn: [LinkedIn Profile](https://linkedin.com/in/your-linkedin)
+* GitHub: [@Abdulsadiqsamadani](https://github.com/Abdulsadiqsamadani)
+* X: [@Abdulsadiqsamad](https://x.com/Abdulsadiqsamad)
+* LinkedIn: [Sadiq Abdussamad Abdulbasid](https://www.linkedin.com/in/sadiq-abdulbasid-2843a6406/)
 
 ### 🔭 Future Features 
+* [ ] Remove all hardcoded items from the tasks array.
+* [ ] Create a new JavaScript file for the new functionality.
+* [ ] Implement a function for adding a new task (add a new element to the array).
+* [ ] Implement a function for deleting a task (remove an element from the array).
+* [ ] Implement a function for editing task descriptions.
 
-* [ ] **Interactive Checkbox Listeners:** Connect active event handlers to modify state completion records in real time.
-* [ ] **Persistent Web Storage Local API:** Save object indices onto localStorage strings to maintain data across reloads.
-* [ ] **Task CRUD Management:** Introduce addition inputs and delete icon nodes to manipulate list items dynamically.
 
 ### 🤝 Contributing 
 
