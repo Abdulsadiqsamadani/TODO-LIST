@@ -30,7 +30,6 @@ export function deleteTask(index) {
   }
 }
 
-
 export function editTask(index, newDescription) {
   const task = tasks.find((t) => t.index === index);
   if (task) {
