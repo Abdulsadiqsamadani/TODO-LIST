@@ -4,7 +4,7 @@ export function saveTasks() {
   localStorage.setItem('todo-tasks', JSON.stringify(tasks));
 }
 
-function updateIndexes() {
+export function updateIndexes() {
   tasks.forEach((task, idx) => {
     task.index = idx + 1;
   });
