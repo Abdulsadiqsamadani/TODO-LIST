@@ -1,10 +1,12 @@
 import {
   addTask, deleteTask, editTask, renderTasks,
 } from './taskUtils.js';
+import { toggleTaskStatus, clearCompletedTasks } from './statusUpdates.js';
 
 export default function initAppListeners() {
   const todoInput = document.getElementById('todo-input');
   const todoList = document.getElementById('todo-list');
+  const clearBtn = document.querySelector('.clear-btn');
 
   if (!todoInput || !todoList) return;
 
@@ -38,5 +40,17 @@ export default function initAppListeners() {
       editTask(taskIndex, e.target.value.trim());
       renderTasks();
     }
+
+    if (e.target.classList.contains('todo-checkbox')) {
+      toggleTaskStatus(taskIndex, e.target.checked);
+      renderTasks();
+    }
   });
+
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      clearCompletedTasks();
+      renderTasks();
+    });
+  }
 }
