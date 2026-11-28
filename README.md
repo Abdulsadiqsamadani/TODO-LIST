@@ -40,7 +40,7 @@ A clean, modern, and interactive single-page To-Do List application designed to 
 
 ### 🚀 Live Demo 
 
-* [Live Demo Link](https://github.com/your-username/todo-list-project)
+* [Live Demo Link](https://abdulsadiqsamadani.github.io/TODO-LIST/)
 
 ### 💻 Getting Started 
 
